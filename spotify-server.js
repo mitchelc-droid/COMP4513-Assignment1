@@ -1,6 +1,8 @@
+const cors = require('cors')
 const express = require("express");
 const supa = require("@supabase/supabase-js");
 const app = express();
+app.use(cors())
 
 const supaUrl = "https://bhhccchqoqaxcdnwpsnp.supabase.co";
 const supaAnonKey =
